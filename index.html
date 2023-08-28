@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra, Papel e Tesoura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="principal">
+        <h1 id="Titulo">Pedra, Papel e Tesoura</h1>
+        <div id="placar">
+            <div id="jogador">
+                <h2 id="jogadorNome">Leonardo</h2>
+                <p id="jogadorPontos">0</p>
+                <ul id="jogadorEscolha">
+                    <li>
+                        <a id="jogadorEscolha1" onclick="jogar(1)">
+                        <img src="pedra.webp" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a id="jogadorEscolha2" onclick="jogar(2)">
+                        <img src="papel1.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a id="jogadorEscolha3" onclick="jogar(3)">
+                        <img src="tesoura.webp" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="versus">VS</div>
+            <div id="computador">
+                <h2 id="computadorNome">Computador</h2>
+                <p id="computadorPontos">0</p>
+                <ul id="computadorEscolha">
+                    <li>
+                        <a id="computadorEscolha1">
+                            <img src="pedra.webp" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a id="computadorEscolha2">
+                            <img src="papel1.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a id="computadorEscolha3">
+                            <img src="tesoura.webp" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="mensagem">&nbsp;</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

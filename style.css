@@ -1,0 +1,96 @@
+ul#jogadorEscolha li a,
+ul#computadorEscolha li a{
+    opacity: 0.2;
+    transform: ease-in-out 0.3s;
+}
+
+ul#jogadorEscolha li a:hover,
+ul#jogadorEscolha li a.selecionado,
+ul#computadorEscolha li a.selecionado {
+    opacity: 1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.principal {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#Titulo {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#placar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+#jogador, #computador {
+    flex: 1;
+    text-align: center;
+}
+
+#jogadorNome, #computadorNome {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+#jogadorPontos, #computadorPontos {
+    font-size: 24px;
+    color: #f39c12;
+}
+
+#jogadorEscolha, #computadorEscolha {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#jogadorEscolha li, #computadorEscolha li {
+    margin: 0 10px;
+}
+
+#jogadorEscolha img, #computadorEscolha img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    transition: border-color 0.3s ease;
+}
+
+#jogadorEscolha img:hover, #computadorEscolha img:hover {
+    border-color: #3498db;
+}
+
+#versus {
+    font-size: 24px;
+    color: #555;
+}
+
+#mensagem {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
